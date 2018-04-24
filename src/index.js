@@ -5,7 +5,7 @@ import reducers from './redux/reducers'
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
-
+// prueba
 const store = createStore(
     reducers,
     compose(
