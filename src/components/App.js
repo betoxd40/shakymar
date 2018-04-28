@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import Home from '../containers/Home';
 import '../sass/app.scss'
+import 'antd/dist/antd.css';
 
 export default class App extends Component {
   render() {
