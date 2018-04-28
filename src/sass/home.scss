@@ -1,9 +1,29 @@
 .NavBar{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   img{
     width: 30px;
     height: auto;
     margin-right: 20px;
+  }
+}
+
+.Carousel{
+  padding-left: 30px;
+  padding-right: 30px;
+  .slides-background{
+    background:url("../assets/home/slide-2.jpg");
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:100%;
+    height: 90vh;
+  }
+  .ant-carousel .slick-slide {
+    text-align: center;
+  }
+
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
   }
 }
