@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Bodoni Sans Text Bold";
+  src: url("../assets/font/BodoniSansTextBold_0.otf") format("opentype");
+}
+@font-face {
+  font-family: "Sofia Pro Light";
+  src: url("../assets/font/sofiapro-light.otf") format("opentype");
+}
+
+h1,h2,h3,h4 {
+  font-family: "Bodoni Sans Text Bold";
+}
+
+h5,p{
+  font-family: "Sofia Pro Light";
+}
