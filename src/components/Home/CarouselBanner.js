@@ -8,7 +8,7 @@ const CarouselBanner = () => {
                 <Col span={24}>
                     <Carousel effect="fade" dots={true} autoplay={true}>
                         <div>
-                            <div className={'slides-background'}>
+                            <div className={'slides-background '}>
                                 <h1>slide-1</h1>
                             </div>
                         </div>

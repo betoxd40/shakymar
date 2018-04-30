@@ -27,3 +27,39 @@
     color: #fff;
   }
 }
+
+.Collection{
+  padding-top: 100px;
+  .img-woman{
+    margin-top: -100px;
+    z-index: -22;
+    position: relative;
+  }
+  .img-men{
+    margin-bottom: -100px;
+    z-index: -22;
+    position: relative;
+  }
+  .box-collection{
+    z-index: 2;
+    background: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    -webkit-box-shadow: -2px -2px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: -2px -2px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: -2px -2px 5px 0px rgba(0,0,0,0.1);
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+    hr{
+      width: 50%;
+    }
+  }
+  a{
+    color: black;
+    font-family: "Bodoni Sans Text Bold";
+    text-decoration: none;
+    hr{
+      width: 50%;
+    }
+  }
+}

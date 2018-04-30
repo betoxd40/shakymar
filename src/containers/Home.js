@@ -3,7 +3,9 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import NavBar from '../components/Home/NavBar';
 import CarouselBanner from '../components/Home/CarouselBanner';
+import Collection from '../components/Home/Collection';
 import '../sass/home.scss';
+
 
 class Home extends React.Component {
     constructor(props, context) {
@@ -15,8 +17,7 @@ class Home extends React.Component {
             <div>
                 <NavBar />
                 <CarouselBanner />
-                <h1>Home</h1>
-                <p>Prueba texto de parrafo</p>
+                <Collection />
             </div>
         );
     }
