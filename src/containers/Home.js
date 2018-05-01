@@ -6,6 +6,7 @@ import CarouselBanner from '../components/Home/CarouselBanner';
 import Collection from '../components/Home/Collection';
 import AboutMe from '../components/Home/AboutMe';
 import FeaturedProducts from '../components/Home/FeaturedProducts';
+import Banner from '../components/Home/Banner';
 import '../sass/home.scss';
 
 
@@ -22,6 +23,7 @@ class Home extends React.Component {
                 <Collection />
                 <AboutMe />
                 <FeaturedProducts />
+                <Banner />
             </div>
         );
     }
