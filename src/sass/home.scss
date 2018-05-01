@@ -63,3 +63,29 @@
     }
   }
 }
+
+.AboutMe{
+  padding: 100px 50px 100px 50px;
+  margin-top: 100px;
+  background: black;
+  h2,p{
+    color: white;
+  }
+  .text-about{
+    margin-left: 10vh;
+    hr{
+      margin-top: 10vh;
+      width: 100%;
+    }
+    p{
+      padding-top: 15px;
+    }
+    a{
+      font-family: "Bodoni Sans Text Bold";
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+}
+

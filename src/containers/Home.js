@@ -4,6 +4,7 @@ import {bindActionCreators} from 'redux';
 import NavBar from '../components/Home/NavBar';
 import CarouselBanner from '../components/Home/CarouselBanner';
 import Collection from '../components/Home/Collection';
+import AboutMe from '../components/Home/AboutMe';
 import '../sass/home.scss';
 
 
@@ -18,6 +19,7 @@ class Home extends React.Component {
                 <NavBar />
                 <CarouselBanner />
                 <Collection />
+                <AboutMe />
             </div>
         );
     }
