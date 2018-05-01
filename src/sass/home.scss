@@ -118,3 +118,29 @@
   }
 }
 
+.BlogHome{
+  margin-top: 100px;
+  h2{
+    padding-bottom: 50px;
+  }
+  img{
+    z-index: -22;
+    position: relative;
+    margin-left: 20px;
+  }
+  .box-blog {
+    margin-top: 100px;
+    margin-left: -100px;
+    z-index: 2;
+    background: white;
+    -webkit-box-shadow: -2px -2px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: -2px -2px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: -2px -2px 5px 0px rgba(0,0,0,0.1);
+    padding: 20px 30px 20px 30px;
+  }
+  a{
+    font-family: "Bodoni Sans Text Bold";
+    text-decoration: none;
+    color: black;
+  }
+}
