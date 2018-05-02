@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import NavBar from '../components/Common/NavBar';
+import Footer from '../components/Common/Footer';
 import CarouselBanner from '../components/Home/CarouselBanner';
 import Collection from '../components/Home/Collection';
 import AboutMe from '../components/Home/AboutMe';
@@ -28,6 +29,7 @@ class Home extends React.Component {
                 <Banner />
                 <BlogHome />
                 <Instagram />
+                <Footer />
             </div>
         );
     }
