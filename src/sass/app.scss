@@ -65,3 +65,49 @@ h5,p{
   margin-right: auto;
   margin-left: auto;
 }
+
+.text-center {
+  text-align: center !important;
+}
+
+.NavBar{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  img{
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+  }
+}
+
+.Footer{
+  margin-top: -150px;
+  background: black;
+  padding-top: 200px;
+  h3,p{
+    color: white;
+  }
+  h3{
+    padding-bottom: 15px;
+  }
+  .padding-column{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  ul{
+    padding: 0;
+    color: white;
+  }
+  .copyright{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  hr{
+    margin-top: 20px;
+  }
+  img{
+    margin-right: 15px;
+    width: 32px;
+    float: left;
+  }
+}
