@@ -1,6 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
+import NavBar from '../components/Common/NavBar';
+import Footer from '../components/Common/Footer';
+import '../sass/deluxe.scss';
+import Banner from "../components/Deluxe/Banner";
+
 
 class Deluxe extends React.Component {
     constructor(props, context) {
@@ -10,7 +15,9 @@ class Deluxe extends React.Component {
     render() {
         return (
             <div>
-                <h1>DELUXE</h1>
+                <NavBar />
+                <Banner />
+                <Footer />
             </div>
         );
     }
