@@ -1,43 +1,39 @@
 // //EXAMPLE
 
-// // var BookInstance = require('../models/bookinstance');
+var Product = require('../models/productModel');
 
-// // // Display list of all BookInstances.
-// exports.bookinstance_list = function(req, res) {
-//   res.send('NOT IMPLEMENTED: BookInstance list');
-// };
+// Return all products
+exports.product_list = function(req, res, next) {
+  Product.find({})
+    .then(products => {
+      res.send(products);
+    })
+    .catch(next);
+};
 
-// // // Display detail page for a specific BookInstance.
-// exports.bookinstance_detail = function(req, res) {
-//   res.send('NOT IMPLEMENTED: BookInstance detail: ' + req.params.id);
-// };
+// Create a new product
+exports.product_create = function(req, res, next) {
+  Product.create(req.body)
+    .then(function(product) {
+      res.send({ type: 'POST' });
+    })
+    .catch(next);
+};
 
-// // // Display BookInstance create form on GET.
-// exports.bookinstance_create_get = function(req, res) {
-//   res.send('NOT IMPLEMENTED: BookInstance create GET');
-// };
+// Update product
+exports.product_update = function(req, res, next) {
+  Product.findByIdAndUpdate({ _id: req.params.id }, req.body)
+    .then(function(product) {
+      res.send({ type: 'UPDATE' });
+    })
+    .catch(next);
+};
 
-// // // Handle BookInstance create on POST.
-// exports.bookinstance_create_post = function(req, res) {
-//   res.send('NOT IMPLEMENTED: BookInstance create POST');
-// };
-
-// // // Display BookInstance delete form on GET.
-// exports.bookinstance_delete_get = function(req, res) {
-//   res.send('NOT IMPLEMENTED: BookInstance delete GET');
-// };
-
-// // // Handle BookInstance delete on POST.
-// exports.bookinstance_delete_post = function(req, res) {
-//   res.send('NOT IMPLEMENTED: BookInstance delete POST');
-// };
-
-// // Display BookInstance update form on GET.
-// exports.bookinstance_update_get = function(req, res) {
-//   res.send('NOT IMPLEMENTED: BookInstance update GET');
-// };
-
-// //Handle bookinstance update on POST.
-// exports.bookinstance_update_post = function(req, res) {
-//   res.send('NOT IMPLEMENTED: BookInstance update POST');
-// };
+// Delete product
+exports.product_delete = function(req, res, next) {
+  Product.findByIdAndRemove({ _id: req.params.id })
+    .then(function(product) {
+      res.send({ type: 'DELETE' });
+    })
+    .catch(next);
+};

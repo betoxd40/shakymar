@@ -1,34 +1,18 @@
 const express = require('express');
 var router = express.Router();
+var productController = require('../controllers/productController');
+const Product = require('../models/productModel');
 
-router.get('/', function(req, res) {
-  //res.send({ name: 'Probando' });
-  console.log({ name: 'Probando /' });
-});
+//page home
+router.get('/', productController.product_list);
 
-router.get('/product', function(req, res) {
-  //res.send({ name: 'Probando' });
-  console.log('Probando GET all product');
-});
+//page product
+router.get('/product', productController.product_list);
 
-router.get('/product/:id', function(req, res) {
-  //res.send({ name: 'Probando' });
-  console.log('Probando GET product /product/id');
-});
+router.post('/product', productController.product_create);
 
-router.post('/product', function(req, res) {
-  //res.send({ name: 'Probando' });
-  console.log('Probando GET product');
-});
+router.put('/product/:id', productController.product_update);
 
-router.put('/product/:id', function(req, res) {
-  //res.send({ name: 'Probando' });
-  console.log('Probando GET product');
-});
-
-router.delete('/product/:id', function(req, res) {
-  //res.send({ name: 'Probando' });
-  console.log('Probando GET product');
-});
+router.delete('/product/:id', productController.product_delete);
 
 module.exports = router;
