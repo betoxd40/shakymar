@@ -1,9 +1,7 @@
-// //EXAMPLE
-
 var Product = require('../models/productModel');
 
 // Return all products
-exports.product_list = function(req, res, next) {
+exports.product_list = (req, res, next) => {
   Product.find({})
     .then(products => {
       res.send(products);
@@ -12,7 +10,7 @@ exports.product_list = function(req, res, next) {
 };
 
 // Create a new product
-exports.product_create = function(req, res, next) {
+exports.product_create = (req, res, next) => {
   Product.create(req.body)
     .then(function(product) {
       res.send({ type: 'POST' });
@@ -21,7 +19,7 @@ exports.product_create = function(req, res, next) {
 };
 
 // Update product
-exports.product_update = function(req, res, next) {
+exports.product_update = (req, res, next) => {
   Product.findByIdAndUpdate({ _id: req.params.id }, req.body)
     .then(function(product) {
       res.send({ type: 'UPDATE' });
@@ -30,7 +28,7 @@ exports.product_update = function(req, res, next) {
 };
 
 // Delete product
-exports.product_delete = function(req, res, next) {
+exports.product_delete = (req, res, next) => {
   Product.findByIdAndRemove({ _id: req.params.id })
     .then(function(product) {
       res.send({ type: 'DELETE' });

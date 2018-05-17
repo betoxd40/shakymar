@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require('mongoose');
 
 app.use(bodyParser.json());
-var routes = require('./routes/routes');
+let routes = require('./routes/routes');
 
 //conecting MONGODB
 mongoose
@@ -21,6 +21,6 @@ app.use('/api', routes);
 app.use(express.static(__dirname + '/../dist'));
 
 //listen server http://localhost:3001/
-app.listen(3001, function() {
+app.listen(3001, () => {
   console.log('server on port 3001');
 });

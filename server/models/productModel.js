@@ -11,7 +11,7 @@ const ProductSchema = new Schema({
   gender: { type: String, required: [true, 'Price field is required'] },
   typeProduct: { type: String, required: [true, 'Price field is required'] },
   description: { type: String, required: [true, 'Price field is required'] },
-  imagePath: [String],
+  imagePath: [String], //{ data: Buffer, contentType: String }<-- tipo de dato para imagenes (deje string para pruebas)
   amount: { type: Number, required: [true, 'Price field is required'] },
   registry_date: { type: Date, default: Date.now },
   available: Boolean,
